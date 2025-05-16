@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Evil Security Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Shadow Evil Security Dashboard</h1>
+        <nav>
+            <button data-section="overview">Overview</button>
+            <button data-section="tasks">Task Management</button>
+            <button data-section="intelligence">Threat Intelligence</button>
+            <button data-section="easm">EASM</button>
+            <button data-section="bas">BAS</button>
+            <button data-section="reporting">Reporting</button>
+            <button data-section="ai-security">AI Security</button>
+            <button data-section="config">Configuration</button>
+        </nav>
+    </header>
+
+    <main id="dashboard-content">
+        <section id="overview-section" class="dashboard-section active-section">
+            <h2>System Overview & Health</h2>
+            <div id="health-status">Loading health status...</div>
+            <p>Welcome to your advanced security dashboard. Select a section from the navigation to view details.</p>
+        </section>
+
+        <section id="tasks-section" class="dashboard-section">
+            <h2>Task Management</h2>
+            <!-- Content for Task Management will be loaded here by JavaScript -->
+            <div id="tasks-list"></div>
+            <h3>Submit New Task</h3>
+            <form id="new-task-form">
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" name="task_name" required><br><br>
+                <label for="module-to-run">Module:</label>
+                <input type="text" id="module-to-run" name="module_to_run" placeholder="e.g., vulnerability_scan" required><br><br>
+                <label for="task-target">Target (Optional):</label>
+                <input type="text" id="task-target" name="target" placeholder="e.g., http://example.com"><br><br>
+                <button type="submit">Submit Task</button>
+            </form>
+        </section>
+
+        <section id="intelligence-section" class="dashboard-section">
+            <h2>Threat Intelligence</h2>
+            <div id="vulnerabilities-list">Loading vulnerabilities...</div>
+        </section>
+
+        <section id="easm-section" class="dashboard-section">
+            <h2>External Attack Surface Management (EASM)</h2>
+            <div id="easm-assets-list">Loading EASM assets...</div>
+        </section>
+
+        <section id="bas-section" class="dashboard-section">
+            <h2>Breach and Attack Simulation (BAS)</h2>
+            <div id="bas-simulations-list">Loading BAS simulations...</div>
+        </section>
+
+        <section id="reporting-section" class="dashboard-section">
+            <h2>Reporting & Analytics</h2>
+            <div id="reports-list">Loading reports...</div>
+        </section>
+
+        <section id="ai-security-section" class="dashboard-section">
+            <h2>AI Security & Trustworthiness</h2>
+            <div id="ai-security-status">Loading AI security status...</div>
+        </section>
+
+        <section id="config-section" class="dashboard-section">
+            <h2>System Configuration</h2>
+            <div id="system-config">Loading system configuration...</div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shadow Evil Industries</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
